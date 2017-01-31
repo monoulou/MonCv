@@ -1,0 +1,3 @@
+ma_mon_cv:
+    resource: "@MAMonCvBundle/Resources/config/routing.yml"
+    prefix:   /

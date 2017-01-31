@@ -1,0 +1,159 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Abdelmoumen Mohamed CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Cognate Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="{{ asset ('css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="{{ asset ('css/style.css') }}" rel='stylesheet' type='text/css' />
+<script src="{{ asset ('js/jquery-1.11.1.min.js') }}"></script>
+<script type="{{ asset ('text/javascript') }}" src="{{ asset ('js/bootstrap.js') }}"></script>
+<!--web-fonts-->
+ <link href="{{ asset ('//fonts.googleapis.com/css?family=Lato') }}" rel='stylesheet' type='text/css'>
+<link href="{{ asset ('//fonts.googleapis.com/css?family=Cabin:400,700,500,600') }}" rel='stylesheet' type='text/css'>
+<link href="{{ asset ('//fonts.googleapis.com/css?family=Pacifico|Prata') }}" rel='stylesheet' type='text/css'>
+<!--//web-fonts-->
+	<!--search jQuery-->
+	<script src="{{ asset ('js/main.js') }}"></script>
+	<!--//search jQuery-->
+	<!-- animation-effect -->
+<link href="{{ asset ('css/animate.min.css') }}" rel="stylesheet">
+<script src="{{ asset ('js/wow.min.js')  }}"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+</head>
+<body>
+	<!--start-header-->
+	<div class="top-bar w3agile-1" id="home">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 top-left wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+							<span class="phone">
+								<i class="glyphicon glyphicon-phone"></i>
+								<em>+33 652332565</em>
+							</span>
+							<span class="email">
+								<i class="glyphicon glyphicon-send"></i>
+								<em>mohamedabdelmoumen@gmail.com</em>
+							</span>
+							<span class="location">
+										<i class="glyphicon glyphicon-map-marker"></i>
+										   <em>Ivry-sur-Seine</em>
+									</span>
+						</div>
+						<div class="col-md-4 head-right wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".3s">
+						   
+						  <a href="{{ asset ('fichiers/cv_mohamed_dev.pdf') }}">Télecharger mon cv au format pdf</a>
+						   <!--
+						   <ul class="top-icons">
+									<li><a class="fb" href="#"></a></li>
+									<li><a class="twitt" href="#"></a></li>
+									<li><a class="goog" href="#"></a></li>
+									<li><a class="drib" href="#"></a></li>
+							   </ul>
+							 -->
+
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+    </div>
+
+<!-- //header -->
+<!-- banner -->
+	<div class="banner agileinfo-1">
+		<div class="container">
+			<div class="header"><!--header-->
+				<nav class="navbar navbar-default">
+					
+					<div class="navbar-header wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+					<!--
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					-->
+						<h1><a href="{{ path('ma_mon_cv_homepage') }}">Mohamed ABDELMOUMEN</a></h1>
+					</div>
+					
+					<!--navbar-header-->
+					<div class="navbar-bar collapsed" id="bs-example-navbar-collapse-1 wow fadeInRight animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="{{ path('ma_mon_cv_homepage') }}" >Accueil</a></li>
+							<li><a href="{{ path('ma_mon_cv_experiences') }}" >Expériences</a></li>
+							<li><a href="{{ path('ma_mon_cv_formation') }}" >Formation</a></li>
+							<li><a href="{{ path('ma_mon_cv_contact') }}" >Contact</a></li>
+						</ul>
+					
+						<div class="clearfix"> </div>
+					</div>
+				</nav>
+			<!--
+			<div class="cd-main-header">
+				<ul class="cd-header-buttons">
+					<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+				</ul> 
+			</div>
+			
+			<div id="cd-search" class="cd-search">
+				<form action="#" method="post">
+					<input name="Search" type="search" placeholder="Search...">
+				</form>
+			</div>
+			-->
+		</div>
+
+		<div class="banner-info">
+			<h2>Développeur Symfony</h2>
+
+			
+		</div>
+		</div>
+	</div>
+
+<div class="count w3-1">
+		<div class="container">
+			<div class="col-md-offset-2 col-md-8 agile_count_grid wow fadeInLeft animated animated" id="my_body" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+
+				
+				{% block body %}
+
+				{% endblock %}
+
+				
+
+			</div>
+		</div>
+</div>
+
+
+
+<!-- /w3ls -->
+	<div class="w3ls">
+	<div class="container">
+	<div class="col-md-offset-4 col-md-4 w3ls-right wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+			<h3>Me contacter</h3>
+				<!--<p class="para">Corrupti quos dolores et quas molestias excepturi .</p>-->
+			<ul class="con-icons">
+				<li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>+33 652332565</li>
+				<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>mohamedabdelmoumen@gmail.com</li>
+				<li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Ivry-sur-Seine, 3 allée belle croix</li>
+
+			</ul>
+
+
+		</div>
+
+</div>
+	
+</body>
+</html>

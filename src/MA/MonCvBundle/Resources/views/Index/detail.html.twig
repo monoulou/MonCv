@@ -1,0 +1,22 @@
+{% extends "::base.html.twig"%}
+
+
+ 
+
+
+{% block body %}
+<div class="row">
+	<h3> {{ detailExperience.intitule }} </h3>
+</div>
+
+<div class="row">
+  	<div class="col-md-2">
+       <img src="{{ asset (detailExperience.image.url) }} " class="img-rounded" id="my_picture"/><br><br>
+  	</div>
+
+  <div class="col-md-offset-2 col-md-6">
+        <h4 class="my_title">Description de l'activité :</h4>{{ detailExperience.description }}<br><br>
+  </div>
+</div>
+
+{% endblock %}

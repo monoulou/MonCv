@@ -1,0 +1,43 @@
+{% extends "::base.html.twig"%}
+
+
+
+
+
+{% block body %}
+      
+      <h3>Mon expérience professionnelle</h3><br>
+<!--
+{% for experience in experiencesList %}
+  <h4>Société :</h4> {{ experience.societe }} .<br>
+  <h4>Fonction :</h4> <a href="{{ path ('ma_mon_cv_detailExperiences',{'idExperience':experience.id}) }}">{{ experience.intitule}}</a> à {{ experience.lieu}} .
+  <h4>Période :</h4> {{ experience.dateExperiences}} . <br><br>
+{% endfor %}
+-->
+Mes principales expériences professionnelles ont été commerciales.<br><br>
+      <div class="col-md-12 table-responsive">
+          <table class="table table-bordered table-striped table-condensed">
+            
+            <thead>
+              <tr>
+                <th>Période</th>
+                <th>Société</th>
+                <th>Fonction</th>
+                <th>Ville</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {% for experience in experiencesList %}
+              <tr>
+                <td>{{ experience.dateExperiences}}</td> 
+                <td>{{ experience.societe }}</td>
+                <td><a href="{{ path ('ma_mon_cv_detailExperiences',{'idExperience':experience.id}) }}">{{ experience.intitule}}</a></td> 
+                <td>{{ experience.lieu}}</td>
+              </tr>
+              {% endfor %}
+            </tbody> 
+          </table>
+      </div>
+
+{% endblock %}

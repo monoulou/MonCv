@@ -1,0 +1,47 @@
+{% extends "::base.html.twig"%}
+
+{% block body %}
+
+    {% for flash_message in app.session.flashBag.get('notice') %}
+          {{ flash_message }}
+    {% endfor %}
+
+    <h3>Présentation :</h3>
+
+      <p>Après plusieurs années d’expériences professionnelles, j’ai fait le choix de réorienter 
+        mon parcours vers les technologies du web. Fasciné par cet univers, j'ai tout d'abord commencé 
+        à me former seul, puis j’ai intégré un organisme de formation dans le but de consolider mes acquis,
+        d'obtenir un diplôme et faire ainsi reconnaitre mes compétences.<br>
+        Depuis, je prends énormément de plaisir à apprendre et à répondre aux problématiques auxquelles 
+        je fais face, en écrivant des lignes de codes.<br><br>
+
+        Ce CV en ligne est la mise en pratique de mes connaissances acquises au cours
+        de mes deux derniers mois de formation. Il a pour but de m'offrir une visibilité
+        sur Internet et de mettre en valeur mes connaissances.<br><br>
+        A l'aide d'un template existant que j'ai personnalisé, j'ai articulé mon projet
+        autour du framework Symfony 2.8, en orientant ma programmation PHP autour d'objets
+        communiquant avec une base de données.
+      </p>
+    <h3>Mes compétences :</h3>
+      <ul class="list-unstyled">
+          <li>HTML 5 | CSS 3</li>
+          <li>Bootstrap</li>
+          <li>Javascript | JQuery</li>
+          <li>PHP 7 | POO | Architecture MVC</li>
+          <li>MySQL | PHPMyAdmin | Adminer</li>
+          <li>Symfony</li>
+          <li>Java</li>
+      </ul>
+    <h3>Mes objectifs :</h3>
+      <p>J'ai pour objectif de continuer à apprendre pour ainsi
+        faire évoluer l'aspect et les fonctionnalités de cv en y intégrant mes nouvelles connaissances et également
+        de m'engager dans de nouveaux projets.
+      </p>
+
+      
+
+
+
+
+
+{% endblock %}

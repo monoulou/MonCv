@@ -1,0 +1,15 @@
+ma_mon_cv_homepage:
+    path:     /
+    defaults: { _controller: MAMonCvBundle:Index:index }
+ma_mon_cv_experiences:
+    path:     /experiences
+    defaults: { _controller: MAMonCvBundle:Index:experiences }
+ma_mon_cv_detailExperiences:
+    path:     /experiences/{idExperience}
+    defaults: { _controller: MAMonCvBundle:Index:detail }
+ma_mon_cv_formation:
+    path:     /formation
+    defaults: { _controller: MAMonCvBundle:Index:formation }
+ma_mon_cv_contact:
+    path:     /contact
+    defaults: { _controller: MAMonCvBundle:Index:contact }
